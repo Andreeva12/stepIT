@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="image/logo.svg">
+<title>Галерея изображений</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* CSS Grid */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('image/fon1.svg');
+  background-size: cover; /* чтобы изображение занимало всю доступную площадь */
+  background-position: center; /* центрирование изображения */
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.header {
+  background-color: #f2f2f257;
+  padding: 10px 0; /*  отступы сверху и снизу */
+  overflow: hidden; /* Чтобы обойти флоаты */
+}
+
+.menu {
+  float: left;
+  width: 70%;
+}
+
+.containers {
+  width: 80%;
+  margin: auto;
+  height: 200px; /*  высоту контейнера */
+}
+
+.menu a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E266F;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.menu-divider {
+  margin-right: 10px;
+  color: #ccc; /* Цвет разделителя */
+}
+
+.user {
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+
+.user img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.user-text {
+  font-weight: bold;
+}
+
+.card {
+  position: relative; /*  относительное позиционирование для корректного позиционирования подписей */
+  width: 100%;
+  height: 200px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+figcaption {
+/*  position: absolute;*/
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f257;
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="containers">
+  <header class="header">
+    <div class="menu">
+      <a href="index.html">Главная</a>
+      <span class="menu-divider">|</span> <!-- Разделитель -->
+      <a href="page_2.html">Советы</a>
+    </div>
+    <div class="user">
+      <img src="image/profil.svg" alt="profil" width="50">
+      <p class="user-text">Мой Блог</p>
+    </div>
+  </header>
+
+  <div class="content">
+    <h1>Добро пожаловать!</h1>
+</div>
+<div class="container">
+  <figure>
+    <img class="card" src="image/ital.jpg" alt="Italy-photo">
+    <figcaption>Италия <a href="#">купить билет</a></figcaption>
+  </figure>
+  <figure>
+    <img class="card" src="image/thai.jpg" alt="Thailand-photo">
+    <figcaption>Тайланд <a href="#">купить билет</a></figcaption>
+  </figure>
+  <figure>
+    <img class="card" src="image/fran.jpg" alt="France-photo">
+    <figcaption>Франция <a href="#">купить билет</a></figcaption>
+  </figure>
+  <figure>
+    <img class="card" src="image/grec.jpg" alt="Greciya-photo">
+    <figcaption>Греция <a href="#">купить билет</a></figcaption>
+  </figure>
+</div>
+</body>
+</html>

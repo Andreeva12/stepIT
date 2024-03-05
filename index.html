@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Блог</title>
+<link rel="icon" type="image/x-icon" href="image/logo.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Общие стили */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('image/fon1.svg');
+  background-size: cover; /* чтобы изображение занимало всю доступную площадь */
+  background-position: center; /* центрирование изображения */
+}
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.containers {
+  width: 80%;
+  margin: auto;
+}
+
+.header {
+  background-color: #f2f2f257;
+  padding: 10px 0; /*  отступы сверху и снизу */
+  overflow: hidden; /* Чтобы обойти флоаты */
+}
+
+.menu {
+  float: left;
+  width: 70%;
+}
+
+.menu a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #2E266F;
+  text-decoration: none;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.menu-divider {
+  margin-right: 10px;
+  color: #ccc; /* Цвет разделителя */
+}
+
+.user {
+  float: right;
+  width: 30%;
+  text-align: right;
+}
+
+.user img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.user-text {
+  font-weight: bold;
+}
+
+.content {
+  clear: both;
+  padding: 20px;
+}
+
+/* Стили для постов */
+.post {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post h2 {
+  margin-bottom: 10px;
+}
+
+.post p {
+  color: #555;
+}
+</style>
+</head>
+<body>
+<div class="containers">
+  <header class="header">
+    <div class="menu">
+      <a href="page_2.html">Советы</a>
+      <span class="menu-divider">|</span> <!-- Разделитель -->
+      <a href="page_3.html">Галерея</a>
+    </div>
+    <div class="user">
+      <img src="image/profil.svg" alt="profil" width="50">
+      <p class="user-text">Мой Блог</p>
+    </div>
+  </header>
+
+  <div class="content">
+    <h1>Добро пожаловать в блог о путешествиях!</h1>
+    <div class="post">
+      <h2>Путешествие в Италию</h2>
+      <p>Сколько стоит поездка в Италию в 2024 году · Виза — 240 евро на двоих.</p>
+      <a href="#">Читать далее</a>
+    </div>
+    <div class="post">
+      <h2>Путешествие в Японию</h2>
+      <p>Развенчиваем мифы и делимся лайфхаками · СТЕРЕОТИП №1. ЯПОНИЯ – МАЛЕНЬКАЯ СТРАНА · СТЕРЕОТИП №2. ЯПОНИЯ – ОЧЕНЬ ДОРОГАЯ СТРАНА.</p>
+      <a href="#">Читать далее</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
